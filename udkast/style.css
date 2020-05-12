@@ -1,0 +1,18 @@
+.topbar{
+    background: #283953;
+    height: 150px;
+}
+.content{
+    height: 1300px;
+}
+footer{
+    text-align: center;
+    background: #283953;
+    height: 100px;
+}
+.footer-text{
+    color: whitesmoke;
+}
+nav{
+    background: #d1be67;
+}
