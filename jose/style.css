@@ -1,0 +1,93 @@
+body{
+    overflow-x: hidden;
+    background: #f2f2f2;
+}
+
+/* Generel styling */
+.topbar{
+    background: #283953;
+    height: 120px;
+    margin: 0;
+}
+.top{
+    float: right;
+    width: 225px;
+    height: auto;
+    margin-top: 18px;
+}
+.global-nav{
+    height: 80px;
+    width: 100%;
+}
+#navbarmenu{
+    background: #d1be67;
+}
+footer{
+    text-align: center;
+    background: #283953;
+    height: 100px;
+}
+.footer-text{
+    color:whitesmoke;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.footer-copyright {
+    color: white;
+    background: #283953;
+}
+.text-copyright {
+    color: #d1be66;
+}
+.text-copyright:hover {
+    color: #b6a351;
+}
+nav{
+    background: #d1be67;
+}
+p{
+    line-height: 170%;
+}
+p, a, li{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h3, h4{
+    font-family: 'Lobster Two', cursive;
+}
+
+/* bibliotek generel styling */
+.local-nav{
+    background: #283953;
+    height: calc(100vh - 80px);
+    width: 176px;
+}
+.local-nav a{
+    color: #dddddd;
+}
+.spacer{
+    height: 95px;
+    width: 100%;
+}
+
+/* bibliotek karakter styling */
+.kollegium{
+    height: 80px;
+    width: auto;
+}
+.karakter{
+    width: 60%;
+    height: auto;
+}
+
+/* tutorial side */
+.video-wrapper{
+    width: 100%;
+    height: auto;
+}
+.tutorial{
+    height: 70%;
+    width: auto;
+}
+.tall{
+    height: 80%;
+}
