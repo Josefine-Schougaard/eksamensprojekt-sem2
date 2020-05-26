@@ -1,0 +1,10 @@
+body {
+    background-image: url(insta-ad2.png);
+    background-size: cover;
+}
+.video {
+    width: 300px;
+    height: 250px;
+    margin-top: 270px;
+    margin-left: 302.5px;
+}
