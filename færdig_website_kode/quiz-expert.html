@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <title>Eksamensprojekt - 2 semester</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="Udforsk Harry Potter! Ved du alt om Harry Potter universet? Afprøv dine evner her med vores ekspert quiz.">
+    <meta name="keywords" content="Harry Potter, quiz, ekspert">
+  </head>
+  <body>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 topbar">
+                  <img class="top" src="img/hogwarts.png" alt="Hogwarts">
+              </div>
+          </div>
+        <div class="sticky-top">
+          <div class="row">
+            <div class="col-12 p-0">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand pl-2" href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+                <button class="navbar-toggler m-0" data-toggle="collapse" data-target="#navbarmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarmenu">
+                  <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Hjem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="udforsk.html" class="nav-link">Troldmandskort</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="karakter-bibliotek.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Biblioteket
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="karakter-bibliotek.html">Karakterer</a>
+                            <a class="dropdown-item" href="besvaergelser.html">Besværgelser</a>
+                            <a class="dropdown-item" href="eliksir.html">Eliksirer</a>
+                            <a class="dropdown-item" href="magiskedyr.html">Magiske væsner</a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                          <a href="fakta.html" class="nav-link">Sjove-fakta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="quiz.html" class="nav-link">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tutorials.html" class="nav-link">Tutorials</a>
+                        </li>
+                    </ul>
+                </div> 
+              </nav>
+            </div>
+          </div>
+        </div>
+      <div class="container row what">
+        <div class="content">
+          <h1>Quiz</h1>
+        </div>
+        <div class="hand">
+          <img class="ask" src="img/hand.png" alt="Hånd der peger">
+          <p>Detter er quizzen for eksperter - Her skal man have styr på alt Harry Potter!</p>
+        </div>
+      </div>
+
+      <div class="quiz-box container">
+          <div class="quiz row">
+              <div class="container easy">
+                  <div class="row">
+                    <h2 class="text-center"><u>Den ekstreme Harry Potter quiz!</u></h2>
+                </div>
+              </div>
+              <div class="container easy">
+              <div class="row well">
+                  <h5 id="test_status">Klik for at starte quizzen!</h5>
+                  <div id="test"></div>
+              </div>
+              </div>
+              <button class="btn btn-primary" id="knap" type="button" onclick="startQuiz()">Start Quiz</button>
+          </div>
+
+      </div>
+
+      <div class="quiz-back-btn">
+        <a href="quiz.html">
+        <span class="btn btn-primary">Gå tilbage til quiz oversigten</span>
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-12 p-0">
+          <footer class="page-footer font-small">
+            <p class="undertext footer-text">Dette webside er et eksamensprojekt lavet af:<br>Regitze Espensen, Josefine Schougaard og Maja Olsson.</p>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="index.html" class="text-copyright"> udforskharrypotter.dk</a>
+              <br>
+              <a href="reklame.html" target="_blank" class="text-copyright">Banner reklame</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="carousel.js"></script>
+
+    <!--Her indsætter vi de individuelle javascript dele, i stedet for at have 4 ekstra js filer-->
+    <script>
+        function startQuiz() {
+    document.getElementById("knap").style.visibility = "hidden";
+    return displayQuestion();
+  }
+  
+  var pos = 0,
+    test2,
+    test_staus,
+    question,
+    option,
+    options,
+    opA,
+    opB,
+    opC,
+    opD,
+    score = 0;
+  var questions2 = [
+    [
+      " Hvad hedder den grå dame i virkeligheden?",
+      " Ariana Dumbledore.",
+      " Helen Hufflepuff.",
+      " Hulkende Hulda.",
+      " Helena Ravenclaw.",
+      "D"
+    ],
+    [
+      "Hvilket dyr kan Rita Rivejern forvandle sig til?",
+      " Bille",
+      " Sommerfugl",
+      " Orm",
+      " Fisk",
+      "A"
+    ],
+    [
+      " Hvad kostede Harrys tryllestav?",
+      " 12 Sølvsegl",
+      " 5 Sølvsegl",
+      " 7 Galleoner",
+      " 10 Galleoner",
+      "C"
+    ],
+    [
+      "Hvor mange veje til Hogsmede viser Røverkortet?",
+      " 9",
+      " 7",
+      " 5",
+      " 3",
+      "B"
+    ]
+  ];
+  
+  function $(arg) { //funktion der forkorter document.getElementById til $
+    return document.getElementById(arg);
+  } 
+  
+  function displayQuestion() {
+    test2 = $("test");
+    if (pos >= questions2.length) {
+      test2.innerHTML =
+        "<h2>Du fik " +
+        score +
+        " ud af " +
+        questions2.length +
+        " spørgsmål rigtige!</h2>";
+      $("test_status").innerHTML = "Quiz gennemført!";
+      pos = 0;
+      score = 0;
+      return false;
+    }
+  
+    $("test_status").innerHTML =
+      "Spørgsmål " + (pos + 1) + " ud af " + questions2.length;
+    question = questions2[pos][0];
+    opA = questions2[pos][1];
+    opB = questions2[pos][2];
+    opC = questions2[pos][3];
+    opD = questions2[pos][4];
+    test2.innerHTML = "<h5>" + question + "</h5>";
+    test2.innerHTML +=
+      "<input type='radio' name='options' value='A'>" + opA + "<br>";
+    test2.innerHTML +=
+      "<input type='radio' name='options' value='B'>" + opB + "<br>";
+    test2.innerHTML +=
+      "<input type='radio' name='options' value='C'>" + opC + "<br>";
+    test2.innerHTML +=
+      "<input type='radio' name='options' value='D'>" + opD + "<br><br>";
+    test2.innerHTML += "<button class=\"btn btn-primary\" onclick='checkAnswer()'>Indsend svar</button>"; // backwards-slash = escape character (ignores firstcoming symbol)
+  }
+  
+  function checkAnswer() {
+    options = document.getElementsByName("options");
+    for (var i = 0; i < options.length; i++) {
+      if (options[i].checked) {
+        option = options[i].value;
+      }
+    }
+    if (option == questions2[pos][5]) {
+      score++;
+    }
+    pos++;
+    displayQuestion();
+  }
+          </script>
+</body>
+</html>
