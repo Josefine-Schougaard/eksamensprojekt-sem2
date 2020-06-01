@@ -29,7 +29,6 @@ footer{
 }
 .footer-text{
     color:whitesmoke;
-    padding-top: 20px;
 }
 .footer-copyright {
     color: white;
@@ -216,10 +215,10 @@ h1, h2, h3{
     padding: 0 20px;
     color: white;
 }
-button {
+.knap {
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
+    margin-left: 20px;
+    margin-right: 20px; 
     margin-top: 15px;
     border: none;
     color: white;
@@ -230,7 +229,6 @@ button {
 }
 .grif {
     background: #e5ba2f;
-    text-align: center;
 }
 .raven {
     background: #c25d39;
@@ -305,7 +303,7 @@ button {
 
 .click {
     background: #d1be67;
-    color: #283953;
+    color: white;
     font-size: large;
     width: 150px;
     margin-top: 50px;
