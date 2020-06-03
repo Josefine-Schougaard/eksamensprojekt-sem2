@@ -355,16 +355,9 @@ h1, h2, h3{
 .quiz-box {
     background: #37255e;
     margin-bottom: 100px;
-    width: 50%;
     border-radius: 20px;
-}
-.easy {
-    display: inline-block;
-}
-.quiz {
-   color: white;
-   display: inline-block;
-   padding: 30px 100px 30px 100px; 
+    padding: 15px;
+    color: white;
 }
 .text-center u {
    text-decoration: none;
